@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>fundamentals</title>
+</head>
+
+<body>
+    <div class="nav">
+        <button class="open-button" onclick="openForm()">Contact Form</button>
+
+        <ul>
+            <li>
+                <i class="material-icons">home</i>
+            </li>
+            <li>
+                <i class=" material-icons">settings</i>
+            </li>
+            <li>
+                <i class="material-icons">support_agent</i>
+
+            </li>
+            <li>
+                <i class="material-icons">contact_phone</i>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="image-area">
+            <div class="image-text centered-container">
+                <p>
+                    Using your FTP or file manager, upload all the font
+                    files found within your Web Font Kit to your
+                    include multiple file extensions such.
+                </p>
+            </div>
+        </div>
+        <div class="intro-text centered-container">
+            <p>
+                Using your FTP or file manager, upload all the font
+                files found within your Web Font Kit to your
+                include multiple file extensions such.
+            </p>
+        </div>
+        <div class="services centered-container">
+            <div class="single-service">
+                <img src="img/cubes.jpg" alt="" srcset="">
+                <p>Some random text</p>
+            </div>
+            <div class="single-service">
+                <img src="img/cubes.jpg" alt="" srcset="">
+                <p>Some random text</p>
+            </div>
+            <div class="single-service">
+                <img src="img/cubes.jpg" alt="" srcset="">
+                <p>Some random text</p>
+            </div>
+            <div class="single-service">
+                <img src="img/cubes.jpg" alt="" srcset="">
+                <p>Some random text</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-popup" id="contactForm">
+        <form action="" class="form-container" name="contact" onsubmit="return validateForm()">
+            <h1>Contact Form</h1>
+
+            <!-- <label for="email"><b></b></label> -->
+            <input type="text" placeholder="Enter Full Name" name="name" id="name">
+            <span class="validationMsg" id="nameVal"></span>
+            <input type="text" placeholder="Enter Email" name="email" id="email">
+            <span class="validationMsg" id="emailVal"></span>
+            <input type="text" placeholder="Enter Phone Number" name="pN" id="pN">
+            <span class="validationMsg" id="pNVal"></span>
+
+            <button type="submit" class="btn" id="submit">
+                submit
+            </button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- <div id="box">the boxing tarining</div>
+    <div id="rectangle">the rectangle</div> -->
+    <script src="js/p.js"></script>
+</body>
+
+</html>

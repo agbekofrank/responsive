@@ -1,0 +1,213 @@
+:root {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #273043;
+    background-color: #ebf2ea;
+    padding: 0px;
+}
+.wrapper {}
+.centered-container {
+    max-width: 1020px;
+    text-align: center;
+}
+.nav {
+    background-color: #192e5b;
+    color: #f2a104;
+}
+.nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+}
+.nav ul li {
+    padding: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #304166;
+    transition: background-color 0.3s;
+}
+.nav ul li:hover {
+    background-color: #1d65a6;
+}
+
+.image-area {
+    background-image: url("img/wp2603016.jpg");
+    background-color: #0abda0;
+    padding: 100px 0px 200px 0px;
+    background-position: center center;
+    background-size: cover;
+}
+.image-text {
+    margin: 0px auto;
+    background-color: none;
+    font-size: 2.5rem;
+    color: #ebf2ea;
+}
+.intro-text {
+    /* color: #bf9d7a; */
+    padding: 50px 0px 50px 0px;
+}
+
+.single-service {
+    text-align: center;
+    margin: 0px 0px 32px 0px;
+}
+.single-service p{
+    padding: 0px 16px;
+}
+.single-service img{
+    width: 300px;
+}
+@media screen and (min-width: 700px){
+    .nav ul {
+        text-align: right;
+    }
+    .nav ul li{
+        display: inline-block;
+        border-bottom: none;
+        border-left: 1px solid #869989;
+    }
+    .intro-text{
+        padding: 0px 0px 0px 130px;
+    }
+    .single-service{
+        float: left;
+        padding: 0px 0px 0px 150px;
+        width: 30%;
+        margin: 10px;
+
+    }
+}
+
+/* pop up form */
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    text-align: center;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  /* border: 3px solid #f1f1f1; */
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(207, 207, 207);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #c0c0c0;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .validationMsg{
+      font-size: 0.8rem;
+      color: red;
+  }
+#box {
+    width: 200px;
+    height: 100px;
+    background-color: darkslategrey;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+#rectangle {
+    background-color: bisque;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
